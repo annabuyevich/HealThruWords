@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="112dp">
+
+    <ImageView
+        android:id="@+id/notif_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/logo"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="9dp"/>
+
+
+
+    <TextView
+        android:id="@+id/notif_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:paddingTop="8dp"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:text="SOME TEXT"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/userTextView"
+        android:layout_alignBottom="@+id/userTextView"
+        android:layout_toRightOf="@+id/userTextView"
+        android:layout_toEndOf="@+id/userTextView" />
+
+    <TextView
+        android:id="@+id/userTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:layout_alignBottom="@+id/notif_icon"
+        android:layout_toRightOf="@+id/personImageView"
+        android:layout_toEndOf="@+id/personImageView" />
+
+    <ImageView
+        android:id="@+id/personImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/com_facebook_profile_picture_blank_square"
+        android:layout_alignTop="@+id/userTextView"
+        android:layout_toRightOf="@+id/notif_icon"
+        android:layout_toEndOf="@+id/notif_icon" />
+
+
+
+
+</RelativeLayout>
